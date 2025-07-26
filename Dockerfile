@@ -4,8 +4,8 @@ FROM php:8.2-cli
 # RUN docker-php-ext-install pdo pdo_mysql
 
 # Copy toàn bộ mã nguồn vào container
-COPY . /app
-WORKDIR /app
+COPY . /App
+WORKDIR /App
 
 # Expose cổng Render yêu cầu
 EXPOSE 10000
