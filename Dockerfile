@@ -1,7 +1,9 @@
 FROM php:8.2-cli
 
-# Cài đặt extension nếu cần (tùy theo project, có thể bỏ dòng dưới nếu không cần DB)
-# RUN docker-php-ext-install pdo pdo_mysql
+# Cài đặt PostgreSQL extension
+RUN apt-get update && apt-get install -y \
+    libpq-dev \
+    && docker-php-ext-install pdo pdo_pgsql
 
 # Copy toàn bộ mã nguồn vào container
 COPY . /App
