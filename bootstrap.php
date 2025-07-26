@@ -9,7 +9,7 @@ $dotenv = Dotenv\Dotenv::createImmutable(ROOTDIR);
 $dotenv->load();
 
 try {
-  $PDO = (new App\Models\PDOFactory())->create([ 
+  $PDO = (new App\Models\PDOFactory())->create([
     'dbhost' => $_ENV['DB_HOST'],
     'dbname' => $_ENV['DB_NAME'],
     'dbuser' => $_ENV['DB_USER'],

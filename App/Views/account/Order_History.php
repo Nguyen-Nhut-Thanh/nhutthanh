@@ -36,7 +36,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php // *** PHẦN HIỂN THỊ CHI TIẾT SẢN PHẨM *** ?>
+                            <?php ?>
                             <?php if (!empty($order_items[$order['id']])): ?>
                                 <?php foreach ($order_items[$order['id']] as $item): ?>
                                     <tr>

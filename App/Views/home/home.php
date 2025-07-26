@@ -128,7 +128,6 @@
         <?php foreach ($recentlyViewed as $product): ?>
           <div class="swiper-slide">
             <div class="card h-100 product-slider-card">
-              <span class="label-new">New</span>
               <a href="/pages/product/productdetail?id=<?= $product['id'] ?>">
                 <img src="<?= '/Images/' . html_escape($product['loai']) . '/' . html_escape($product['hinhanh1']) ?>"
                   class="card-img-top"

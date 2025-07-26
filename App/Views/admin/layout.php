@@ -29,7 +29,12 @@
                             <i class="fa fa-file-invoice-dollar me-2"></i> Quản lý Đơn hàng
                         </a>
                     </li>
-                </ul>
+                    <li>
+                        <a href="/admin/users" class="nav-link text-white <?= (strpos($_SERVER['REQUEST_URI'], '/admin/users') !== false) ? 'active' : '' ?>">
+                            <i class="fa fa-users me-2"></i> Quản lý Người dùng
+                        </a>
+                    </li>
+                    </ul>
                 <hr>
                 <ul class="nav nav-pills flex-column">
                     <li>
@@ -89,7 +94,12 @@
                     <i class="fa fa-file-invoice-dollar me-2"></i> Quản lý Đơn hàng
                 </a>
             </li>
-        </ul>
+            <li>
+                <a href="/admin/users" class="nav-link text-white <?= (strpos($_SERVER['REQUEST_URI'], '/admin/users') !== false) ? 'active' : '' ?>">
+                    <i class="fa fa-users me-2"></i> Quản lý Người dùng
+                </a>
+            </li>
+            </ul>
         <hr>
         <ul class="nav nav-pills flex-column">
             <li>

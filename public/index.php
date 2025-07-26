@@ -7,6 +7,8 @@ use Bramus\Router\Router;
 $router = new Router();
 
 // ROUTE TRANG CHỦ
+$router->get('/', 'App\Controllers\HomeController@index');
+$router->get('/pages', 'App\Controllers\HomeController@index');
 $router->get('/pages/home', 'App\Controllers\HomeController@index');
 
 // ROUTE SẢN PHẨM
@@ -59,6 +61,9 @@ $router->post('/admin/products/delete/(\w+)', 'App\Controllers\Admin\AdminProduc
 // ROUTE ADMIN ĐƠN HÀNG
 $router->get('/admin/orders', 'App\Controllers\Admin\AdminOrderController@index'); // Danh sách đơn hàng
 $router->post('/admin/orders/update_status', 'App\Controllers\Admin\AdminOrderController@updateStatus'); 
+// ROUTE ADMIN TAI KHOAN
+$router->get('/admin/users', 'App\Controllers\Admin\AdminUserController@index');
+
 // ROUTE 404
 $router->set404('\App\Controllers\ErrorController@sendNotFound'); 
 // ROUTE LIÊN HỆ

@@ -43,7 +43,7 @@ CREATE TABLE orders (
     FOREIGN KEY (user_id) REFERENCES users(id)
 );
 
--- Bảng chi tiết đơn hàng: mỗi sản phẩm 1 dòng, gắn với order_id
+-- Bảng chi tiết đơn hàng
 CREATE TABLE order_items (
     id SERIAL PRIMARY KEY,
     order_id INT NOT NULL,

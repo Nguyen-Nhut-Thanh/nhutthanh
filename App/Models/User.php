@@ -61,5 +61,10 @@ class User
 
         return $this;
     }
-
+    // Lấy tất cả user
+    public function getAll(): array
+    {
+        $stmt = $this->connection->query("SELECT * FROM users ORDER BY id ASC");
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
 }

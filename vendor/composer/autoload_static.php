@@ -10,7 +10,7 @@ class ComposerStaticInitcf61a8b65cad2c51d8ee3b64bd7ff3c4
         '320cde22f66dd4f5d3fd621d3e88b98f' => __DIR__ . '/..' . '/symfony/polyfill-ctype/bootstrap.php',
         '0e6d7bf4a5811bfa5cf40c5ccd6fae6a' => __DIR__ . '/..' . '/symfony/polyfill-mbstring/bootstrap.php',
         'a4a119a56e50fbb293281d9a48007e0e' => __DIR__ . '/..' . '/symfony/polyfill-php80/bootstrap.php',
-        'cadc9c721433675b17f426e6ddd5daa4' => __DIR__ . '/../..' . '/app/functions.php',
+        '6d2b27acc406448a4e89214f4c4152c3' => __DIR__ . '/../..' . '/App/functions.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -73,7 +73,7 @@ class ComposerStaticInitcf61a8b65cad2c51d8ee3b64bd7ff3c4
         ),
         'App\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app',
+            0 => __DIR__ . '/../..' . '/App',
         ),
     );
 

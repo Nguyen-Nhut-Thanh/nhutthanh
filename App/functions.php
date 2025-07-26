@@ -81,8 +81,6 @@ if (!function_exists('session_get_once')) {
   }
 }
 
-// Thêm vào cuối tệp app/functions.php
-
 if (!function_exists('csrf_token')) {
     // Tạo và lưu trữ một token chống CSRF trong session
     function csrf_token() {

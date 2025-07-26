@@ -16,7 +16,6 @@ class HomeController
 
     public function index()
     {
-        // Sản phẩm mới
         $newProducts = $this->productHomeModel->getNewProducts();
 
         $recentlyViewed = $this->productHomeModel->recentlyViewed();
